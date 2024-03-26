@@ -85,5 +85,7 @@ def main():
         out_file = icon_dir / f"{current['app_id']}.png"
         ensure_downloaded(current["icon"], out_file)
 
+    shutil.copy("_headers", OUT_DIR / "_headers")
+
 if __name__ == "__main__":
     main()
