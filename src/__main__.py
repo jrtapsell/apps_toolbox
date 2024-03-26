@@ -12,6 +12,16 @@ OUT_DIR = pathlib.Path("out")
 DATA_FILE = pathlib.Path("data") / "apps.json"
 STATIC_DIR = pathlib.Path("static")
 
+def ensure_downloaded(url: str, out_path: pathlib.Path):
+    if out_path.exists():
+        return
+    resp = requests.get(url, allow_redirects=True)
+    resp.raise_for_status()
+    with out_path.open("wb") as fd:
+        fd.write(resp.content)
+        fd.flush()
+
+
 def main():
     shutil.rmtree(OUT_DIR, ignore_errors=True)
     OUT_DIR.mkdir()
@@ -25,12 +35,7 @@ def main():
 
     fa_tmp = (CACHE_DIR / "fa.zip")
 
-    if not fa_tmp.exists():
-        fa = requests.get(FA_URL, allow_redirects=True)
-        fa.raise_for_status()
-        with fa_tmp.open("wb") as fd:
-            fd.write(fa.content)
-            fd.flush()
+    ensure_downloaded(FA_URL, fa_tmp)
 
     for (file_name, url, color) in [
         (f"apple_{x['apple_id']}", x["link_apple"], "000099" ) for x in data
@@ -42,12 +47,7 @@ def main():
         (OUT_DIR / "qr_codes").mkdir(exist_ok=True)
         out_file = OUT_DIR / "qr_codes" / f"{file_name}.png"
 
-        if not cached_file.exists():
-            r = requests.get(generator_url, allow_redirects=True)
-            r.raise_for_status()
-            with cached_file.open("wb") as fd:
-                fd.write(r.content)
-                fd.flush()
+        ensure_downloaded(generator_url, cached_file)
             
         shutil.copy(cached_file, out_file)
         
@@ -78,6 +78,12 @@ def main():
         fd.write(comp)
     
     shutil.copytree(STATIC_DIR, OUT_DIR/"static")
+
+    icon_dir = OUT_DIR / "icons"
+    icon_dir.mkdir()
+    for current in data:
+        out_file = icon_dir / f"{current['app_id']}.png"
+        ensure_downloaded(current["icon"], out_file)
 
 if __name__ == "__main__":
     main()
