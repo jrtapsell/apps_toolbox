@@ -19,4 +19,4 @@ jobs:
           NETLIFY_SITE_ID: "8c76f1f8-6ea7-437a-9ca7-8f2a7a5403fb"
           install_command: "echo Skipping installing the dependencies"
           build_command: "echo Skipping building the web files"
-          NETLIFY_DEPLOY_MESSAGE: "GH Actions - ${{ env.GITHUB_SHA }}"
+          NETLIFY_DEPLOY_MESSAGE: "GH Actions - ${{ github.sha }}"
