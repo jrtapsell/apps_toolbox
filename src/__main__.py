@@ -13,7 +13,7 @@ DATA_FILE = pathlib.Path("data") / "apps.json"
 STATIC_DIR = pathlib.Path("static")
 
 def main():
-    shutil.rmtree(OUT_DIR)
+    shutil.rmtree(OUT_DIR, ignore_errors=True)
     OUT_DIR.mkdir()
     CACHE_DIR.mkdir(exist_ok=True)
     with DATA_FILE.open("r") as fd:
