@@ -62,7 +62,7 @@ def main():
             "fontawesome-free-6.5.1-web/webfonts/fa-brands-400.ttf",
             "fontawesome-free-6.5.1-web/webfonts/fa-brands-400.woff2",
             "fontawesome-free-6.5.1-web/webfonts/fa-solid-900.ttf",
-            "fontawesome-free-6.5.1-web/webfonts/fa-solid-900.ttf"
+            "fontawesome-free-6.5.1-web/webfonts/fa-solid-900.woff2"
         ]:
             zip_ref.extract(file_name, OUT_DIR)
     (OUT_DIR / "fontawesome-free-6.5.1-web").rename(OUT_DIR / "fontawesome")
