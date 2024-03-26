@@ -1,0 +1,23 @@
+[
+    {
+        "app_id": "envision_ai",
+        "name": "Envision AI",
+        "android_id": "com.letsenvision.envisionai",
+        "apple_id": "1268632314",
+        "icon": "https://assets-global.website-files.com/5ac150ab7e9bbe927474fbde/62f0d861bf33036a6bb75d87_Webclip.png"
+    },
+    {
+        "app_id": "seeing_ai",
+        "name": "Seeing AI",
+        "android_id": "com.microsoft.seeingai",
+        "apple_id": "999062298",
+        "icon": "https://www.seeingai.com/logo.png"
+    },
+    {
+        "app_id": "navilens",
+        "name": "NaviLens",
+        "android_id": "com.neosistec.NaviLens",
+        "apple_id": "1273704914",
+        "icon": "https://www.navilens.com/apple-touch-icon.png"
+    }
+]

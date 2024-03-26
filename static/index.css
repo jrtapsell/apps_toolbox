@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.appCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.installer_containers {
+    display: flex;
+}
+
+.install_option {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+button.install_button {
+    padding: 1em;
+    margin: 0.5em;
+    font-size: 2em;
+    color: white;
+    border-radius: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+img.install_qr {
+    padding-top: 1em;
+    max-width: 200px;
+    margin: auto;
+    display: flow;
+}
+
+h1 {
+    background: black;
+}
+h2 {
+    background: #333;
+}
+h3 {
+    background: #777;
+}
+h1,h2,h3 {
+    text-align: center;
+    color: white;
+    padding: 1em;
+    margin: 0;
+}
+
+button.install_apple {
+    background: #0e2293;
+}
+
+button.install_android {
+    background: #0e930e;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+.footer_fill {
+    background: black;
+    flex-grow: 2;
+}
+.app_icon {
+    height: 400px;
+    padding: 25px;
+}
+
+.fa-brands {
+    font-size: 2em;
+}
+
+.os_title {
+    display: inline-block;
+    flex-grow: 2;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.fa-brands {
+    display: inline-block;
+}
+
+h3 {
+    display: flex;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    flex-grow: 2;
+}
+
+.install_button { flex-grow: 2 }
+body,button { font-family: system-ui !important }

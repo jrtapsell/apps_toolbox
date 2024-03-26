@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>
+            App Toolbox
+        </title>
+
+        <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="fontawesome/css/brands.css" rel="stylesheet" />
+        <link href="fontawesome/css/solid.css" rel="stylesheet" />
+        <link href="static/index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>App Toolbox</h1>
+        {% for item in data_file %}
+        <div class="appCard" class="app_container">
+            <h2>{{item.name}}</h2>
+            <div class="installer_containers">
+                <div class="app_icon_container">
+                    <img src="{{item.icon}}" class="app_icon">
+                </div>
+                <div class="install_option">
+                    <h3>
+                        <i class="fa-icon fa-brands fa-apple"></i>
+                        <span class="os_title">
+                        Apple
+                        </span>
+                        <i class="fa-icon fa-brands fa-apple"></i>
+                    </h3>
+                    <div class="image_container">
+                    <img src="qr_codes/apple_{{item.apple_id}}.png" class="install_qr">
+                    </div>
+                    <a href="{{item.link_apple}}">
+                        <button class="install_button install_apple" data-destination="{{item.link_apple}}">
+                            Install
+                            <i class="fa-icon fa-solid fa-up-right-from-square"></i>
+                        </button>
+                    </a>
+                </div>
+                <div class="install_option">
+                    <h3>
+                        <i class="fa-icon fa-brands fa-android"></i>
+                        <span class="os_title">
+                        Android
+                        </span>
+                        <i class="fa-icon fa-brands fa-android"></i>
+                    </h3>
+                    <div class="image_container">
+                    <img src="qr_codes/android_{{item.android_id}}.png" class="install_qr">
+                    </div>
+                    <a href="{{item.link_android}}">
+                        <button class="install_button install_android">
+                            Install
+                            <i class="fa-icon fa-solid fa-up-right-from-square"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="footer_fill"></div>
+    </body>
+</html>
