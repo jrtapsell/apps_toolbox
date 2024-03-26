@@ -15,6 +15,7 @@ STATIC_DIR = pathlib.Path("static")
 def main():
     shutil.rmtree(OUT_DIR)
     OUT_DIR.mkdir()
+    CACHE_DIR.mkdir(exist_ok=True)
     with DATA_FILE.open("r") as fd:
         data = json.load(fd)
 
