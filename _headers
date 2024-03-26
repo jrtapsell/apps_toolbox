@@ -3,6 +3,6 @@
   X-XSS-Protection: 1; mode=block
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Permissions-Policy: ''
-  Content-Security-Policy: default-src 'self'; img-src 'self'; font-src: 'self'; style-src: 'self';
+  Content-Security-Policy: default-src 'self'; img-src 'self'; font-src 'self'; style-src 'self';
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
