@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=1000, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             App Toolbox
         </title>
@@ -21,11 +21,12 @@
                 </div>
                 <div class="install_option">
                     <h3>
+                        <div class="os_logo">
                         <i class="fa-icon fa-brands fa-apple"></i>
-                        <span class="os_title">
+                        </div>
+                        <div class="os_title">
                         Apple
-                        </span>
-                        <i class="fa-icon fa-brands fa-apple"></i>
+                        </div>
                     </h3>
                     <div class="image_container">
                     <img src="qr_codes/apple_{{item.apple_id}}.png" class="install_qr">
@@ -39,11 +40,13 @@
                 </div>
                 <div class="install_option">
                     <h3>
+                        <div class="os_logo">
                         <i class="fa-icon fa-brands fa-android"></i>
-                        <span class="os_title">
+                        </>
+                        </div>
+                        <div class="os_title">
                         Android
-                        </span>
-                        <i class="fa-icon fa-brands fa-android"></i>
+                        </div>
                     </h3>
                     <div class="image_container">
                     <img src="qr_codes/android_{{item.android_id}}.png" class="install_qr">
