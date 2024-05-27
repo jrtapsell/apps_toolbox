@@ -1,0 +1,39 @@
+{
+    "$id": "https://example.com/person.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "app_id": {
+                "type": "string",
+                "pattern": "^[a-z0-9_]{3,}$"
+            },
+            "name": {"type": "string"},
+            "android_id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z\\.0-9]+$"
+            },
+            "apple_id": {
+                "type": "integer"
+            },
+            "icon": {
+                "type": "string",
+                "pattern": "^https://.*$"
+            },
+            "price_model": {
+                "type": "string",
+                "enum": ["Paid", "Free"]
+            },
+            "description": {
+                "type": "string"
+            },
+            "vendor_site": {
+                "type": "string",
+                "pattern": "^https://.*"
+            }
+        },
+        "additionalProperties": false,
+        "required": ["app_id", "name"]
+    }
+}

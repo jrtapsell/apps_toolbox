@@ -1,0 +1,185 @@
+---
+- app_id: aria
+  name: Aria
+  apple_id: 1590186766
+  android_id: "io.aira.smart"
+  vendor_site: "https://aira.io/"
+  description: |
+    Aira is a service that connects people who are blind or have low vision to highly trained, remotely-located human agents. Through an app on your smartphone, Aira delivers instant access to visual information at the touch of a button – enhancing everyday efficiency, engagement, and independence. 
+- app_id: be_my_eyes
+  name: Be My Eyes
+  vendor_site: https://www.bemyeyes.com/
+  apple_id: 905177575
+  android_id: com.bemyeyes.bemyeyes
+  description: |
+    Need a pair of sharp eyes? Or have some sight to lend? Be My Eyes is a simple, free tool to see the world better, together.
+
+    Be My Eyes connects you with a global community of volunteers and company representatives who are ready at a moment’s notice to help you see – to lend their eyesight and support with everyday tasks.
+- app_id: envision_ai
+  name: Envision AI
+  android_id: com.letsenvision.envisionai
+  apple_id: 1268632314
+  icon: https://assets-global.website-files.com/5ac150ab7e9bbe927474fbde/62f0d861bf33036a6bb75d87_Webclip.png
+  price_model: Free
+  vendor_site: https://www.letsenvision.com/envision-app
+  description: |
+    Envision is a smartphone app that empowers blind and low vision users
+    to be independent by speaking out the visual world around them.
+- app_id: soundscape
+  vendor_site: https://www.microsoft.com/en-us/research/product/soundscape/overview/
+  name: Microsoft Soundscape
+  apple_id: 1240320677
+  description: |
+    Immerse yourself in your surroundings and navigate effortlessly with Soundscape spatial audio.
+
+    Microsoft Soundscape will place audio cues and labels in 3D space such that they sound like they are coming from the direction of the points of interest, parks, roads and other features in your surroundings.
+
+    Switch between using Soundscape in the real world, or the virtual world, to help you build a picture of a place effortlessly with Street Preview.
+
+    Soundscape is designed to live in the background and provide you with effortless ambient awareness. Therefore, feel free to use it in conjunction with other apps such as podcasts, audio books, email and even GPS navigation.
+- app_id: libby
+  name: Libby
+  apple_id: 1076402606
+  android_id: com.overdrive.mobile.android.libby
+  vendor_site: https://www.overdrive.com/apps/libby
+  description: |
+    Borrow ebooks, audiobooks, magazines, and more from your local library for free! Libby is the newer library reading app by OverDrive, loved by millions of readers worldwide.
+- app_id: scribd
+  name: Everand
+  apple_id: 542557212
+  android_id: com.scribd.app.reader0
+  description: |
+    Read or listen anytime, anywhere.
+  vendor_site: https://www.scribd.com/
+- app_id: seeing_ai
+  name: Seeing AI
+  android_id: com.microsoft.seeingai
+  apple_id: 999062298
+  icon: https://www.seeingai.com/logo.png
+  price_model: Free
+  vendor_site: https://www.microsoft.com/en-us/ai/seeing-ai
+  description: |
+    A free app that narrates the world around you, now available in Italian, Turkish, Dutch, German, French, Japanese and Spanish.
+- app_id: taptapsee
+  name: TapTapSee
+  apple_id: 567635020
+  vendor_site: https://taptapseeapp.com/
+  android_id: com.msearcher.taptapsee.android
+  description: |
+    TapTapSee is a mobile camera application designed specifically for blind and visually impaired users, powered by the CloudSight Image Recognition API. TapTapSee utilizes your device’s camera and VoiceOver functions to take a picture or video of anything and identify it out loud for you.
+
+    Double-tap the right side of the screen to take a picture or double-tap the left side of the screen to take a video. TapTapSee can accurately analyze and identify any two or three dimensional object at any angle within seconds. The device’s VoiceOver then speaks the identification aloud.
+- app_id: dragon_anywhere
+  name: Dragon Anywhere
+  vendor_site: https://www.nuance.com/en-gb/dragon/dragon-anywhere.html
+  apple_id: 1024652126
+  android_id: com.nuance.dragonanywhere
+  description: |
+    Dictate documents of any length, easily edit, adjust formatting and quickly share them on the most popular cloud‑sharing services, directly from your iOS or Android smartphone or tablet.
+- app_id: audible
+  name: Audible
+  apple_id: 379693831
+  android_id: com.audible.application
+  vendor_site: https://www.audible.co.uk/
+- app_id: google_translate
+  name: Google Translate
+  apple_id: 414706506
+  android_id: com.google.android.apps.translate
+  description: |
+    Text translation: Translate between 108 languages by typing
+
+    • Offline: Translate with no Internet connection (59 languages)
+    • Instant camera translation: Translate text in images instantly by just pointing your camera (94 languages)
+    • Photos: Take or import photos for higher-quality translations (90 languages)
+    • Conversations: Translate bilingual conversations on the fly (71 languages)
+    • Handwriting: Draw text characters instead of typing (96 languages)
+    • Phrasebook: Star and save translated words and phrases for future reference (all languages)
+  vendor_site: https://translate.google.co.uk/?hl=en&tab=TT
+- app_id: moovit
+  name: Moovit
+  apple_id: 498477945
+  android_id: com.tranzmate
+  vendor_site: https://moovit.com/features/
+  description: |
+    Moovit has optimized every screen across the app for VoiceOver and TalkBack technologies (screen-reading) on iOS and Android devices. With this enhanced accessibility integration, users use gestures to navigate through screen elements and focus on them. Once the focus is on an element, including buttons and labels, the VoiceOver / TalkBack feature reads aloud the text that appears on it. Specifically, with Moovit’s “Live Directions” feature, the user gets step-by-step GPS-style guidance for their journey and even receives alerts when the bus is arriving or “Get Off Alerts” to get ready before they’ve reached their destination stop. 
+- app_id: evelity
+  name: Evelity
+  apple_id: 1457329183
+  android_id: com.okeenea.evelity
+  vendor_site: https://www.evelity.com/en/
+  description: |
+    The first wayfinding solution for all types of disabilities, useful for everyone!
+    Our promise: to guide people with disabilities through complex places of everyday life, using a step-by-step guidance system like a pedestrian GPS, both indoors and outdoors.
+- app_id: lookout
+  name: Lookout - Assisted vision
+  android_id: com.google.android.apps.accessibility.reveal
+  description: |
+    Seeing AI on Android
+  vendor_site: https://support.google.com/accessibility/android/answer/9031274?hl=en-GB
+- app_id: ai_poly
+  name: AI Poly
+  apple_id: 1069166437
+  android_id: com.aipoly.vision
+  vendor_site: https://www.aipoly.com/
+- app_id: roger_voice
+  name: Roger Voice
+  apple_id: 1033113354
+  android_id: com.rogervoice.app
+  vendor_site: https://rogervoice.com/en/
+  description: |
+    RogerVoice app is designed to make calls accessible and simple for the deaf community. Empowered by voice recognition technology and speed synthesis, the application helps hearing-challenged persons to call anyone and get a real-time transcription of the conversation. RogerVoice works in over a hundred languages in many countries across the globe.instantly!
+    Hearing difficulties should not prevent you from enjoying phone calls. Simply read the live transcriptions and you'll never miss out again.`
+- app_id: wheelmap
+  name: Wheelmap
+  apple_id: 399239476
+  android_id: org.wheelmap.android.online
+  vendor_site: https://wheelmap.org/
+  description: |
+    Wheelmap is devised to assist mobility-impaired people. Users can find wheelchair-accessible places on a virtual map of areas like restaurants, cafes, toilets, shops, cinemas, parking lots, bus stops and much more. Wheelmap is built on OpenStreetMap and everyone can enhance the data stored in this online world map by flagging locations, contributing comments, and uploading pictures.``
+- app_id: speechify
+  name: Speechify
+  apple_id: 1209815023
+  android_id: com.cliffweitzman.speechify2
+  vendor_site: https://speechify.com/
+  description: |
+    Speechify Text Reader is designed to help people with disabilities such as dyslexia, ADHD, and low vision. The application can also be of great use as it now helps hundreds of thousands of people to consume their reading content with ease. Speechify Text Reader turns anything into an audiobook that helps people with disability to focus and retain more info.
+- app_id: nrs
+  name: National Relay Service
+  apple_id: 1483202788
+  android_id: com.bt.relayuk
+  vendor_site: https://www.relayuk.bt.com/
+  description: |
+    The National Relay Service is a government initiative that allows people who are deaf, hard of hearing and have a speech impairment to make and receive phone calls. It features various call options, such as the ability to text and read speech, speaking to a friend but reading their responses on-screen, and signing conversation over Skype to be translated by a Relay Officer.
+- app_id: natural_reader
+  name: Natural Reader
+  android_id: com.naturalsoft.personalweb
+  vendor_site: https://www.naturalreaders.com/
+  apple_id: 1487572960
+- app_id: navilens
+  name: NaviLens
+  android_id: com.neosistec.NaviLens
+  apple_id: 1273704914
+  icon: https://www.navilens.com/apple-touch-icon.png
+  vendor_site: https://www.navilens.com/en/
+  price_model: Free
+  description: |
+    NaviLens, an app that makes it easier for visual impaired people to access information through QR codes of colors, has a new functionality available for users to download tags for their own personal use. Until now these tags were available in public spaces such as train stations. In this new functionality, the codes provided are blank for users to record any information about the objects in their environment. The developers have created tags of different sizes that can be adjusted to the needs of remote reading. In addition, they are printable and easily separated.
+- app_id: blindsquare
+  name: BlindSquare
+  apple_id: 500557255
+  vendor_site: https://www.blindsquare.com/
+  description: |
+    BlindSquare is the world’s most widely used accessible GPS-app developed for the blind, deafblind and partially sighted. Paired with third-party navigation apps, BlindSquare’s self-voicing app delivers detailed points of interest and intersections for safe, reliable travel both outside and inside. Open the doors to enhanced independence with BlindSquare.
+- app_id: lazarillo
+  name: Lazarillo GPS for Blind
+  apple_id: 1139331874
+  android_id: com.lazarillo
+  vendor_site: https://lazarillo.app/
+  description: |
+    The intelligent guide application for blind people and visually impaired, who guides you by voice messages in the city
+- app_id: zuzanka
+  name: Zuzanka
+  apple_id: 6444279925
+  android_id: com.zuzanka
+  description: |
+    Zuzanka is the world's first expiry date scanner. The app makes it easy to locate expiration dates on food products, converts them to text format and allows export to other applications. Zuzanka was created to support the blind and visually impaired people, but it will be useful to anyone who wants to keep their kitchen tidy.

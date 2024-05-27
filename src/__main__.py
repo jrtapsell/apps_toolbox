@@ -5,11 +5,13 @@ import requests
 import zipfile
 import pathlib
 import shutil
+import yaml
+
 
 CACHE_DIR = pathlib.Path("cache")
 FA_URL = "https://use.fontawesome.com/releases/v6.5.1/fontawesome-free-6.5.1-web.zip"
 OUT_DIR = pathlib.Path("out")
-DATA_FILE = pathlib.Path("data") / "apps.json"
+DATA_FILE = pathlib.Path("data") / "apps.yaml"
 STATIC_DIR = pathlib.Path("static")
 
 def ensure_downloaded(url: str, out_path: pathlib.Path):
@@ -27,13 +29,15 @@ def main():
     OUT_DIR.mkdir()
     CACHE_DIR.mkdir(exist_ok=True)
     with DATA_FILE.open("r") as fd:
-        data = json.load(fd)
+        data = yaml.load(fd, Loader=yaml.SafeLoader)
 
     for d in data:
         if not d.get("app_id") or not d.get("name"):
             raise AssertionError("Bad data file")
 
     for item in data:
+        if 'apple_id' in item:
+            item["apple_id_str"] = str(item["apple_id"])
         if 'apple_id' in item:
             item["link_apple"] = f"https://itunes.apple.com/us/app/keynote/id{item['apple_id']}?mt=8"
         if 'android_id' in item:
@@ -48,7 +52,6 @@ def main():
     ] + [
         (f"android_{x['android_id']}", x["link_android"], "009900") for x in data if "link_android" in x
     ]:
-        print(file_name, url, color)
         generator_url = f"https://api.qrserver.com/v1/create-qr-code/?size=500x500&data={url}&color={color}"
         cached_file = CACHE_DIR / f"{file_name}.png"
         (OUT_DIR / "qr_codes").mkdir(exist_ok=True)
@@ -91,8 +94,10 @@ def main():
     for current in data:
         if "icon" not in current:
             continue
+        tmp_file = CACHE_DIR / f"icon_{current['app_id']}.png"
         out_file = icon_dir / f"{current['app_id']}.png"
-        ensure_downloaded(current["icon"], out_file)
+        ensure_downloaded(current["icon"], tmp_file)
+        shutil.copy(tmp_file, out_file)
 
     shutil.copy("_headers", OUT_DIR / "_headers")
 

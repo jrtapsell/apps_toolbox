@@ -1,3 +1,25 @@
+{% macro install_option(item, platform_name, icon_name, qr_image, app_link) %}
+    <div class="os_title_{{platform_name.lower()}} os_title">
+        <i class="fa-icon fa-brands {{icon_name}} os_logo"></i>
+        <div class=os_name>{{platform_name}}</div>
+        <i class="fa-icon fa-brands {{icon_name}} os_logo"></i>
+    </div>
+    {% if app_link %}
+        <div class="qr_container_{{platform_name.lower()}}">
+            <img src={{qr_image}} class="install_qr imgdiv">
+        </div>
+        <div class="app_link_{{platform_name.lower()}}">
+        <a href="{{app_link}}" class="a_app_link">
+            <button class="install_button install_button_{{platform_name.lower()}}" data-destination="{{app_link}}">
+            Install
+            <i class="fa-icon fa-solid fa-up-right-from-square"></i>
+            </button>
+        </a>
+        </div>
+    {% else %}
+        <div class="unavailable_filler_{{platform_name.lower()}}">Sorry, this app isn't available on this platform</div>
+    {% endif %}
+{% endmacro %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,69 +33,32 @@
         <link href="static/index.css" rel="stylesheet" />
     </head>
     <body>
+        <div class=apps_listing>
         <h1>App Toolbox</h1>
         {% for item in data_file %}
-        <div class="appCard" class="app_container">
-            <h2>{{item.name}}</h2>
-            <div class="installer_containers">
-                <div class="app_icon_container">
-                    {% if "icon" in item %}
-                    <img src="icons/{{item.app_id}}.png" class="app_icon">
-                    {% endif %}
-                    <div class="app_description">
-                        {{item.description}}
-                    </div>
-                </div>
-                <div class="install_option">
-                    <h3>
-                        <div class="os_logo">
-                        <i class="fa-icon fa-brands fa-apple"></i>
-                        </div>
-                        <div class="os_title">
-                        Apple
-                        </div>
-                    </h3>
-                    {% if "apple_id" in item %}
-                    <div class="image_container">
-                    <img src="qr_codes/apple_{{item.apple_id}}.png" class="install_qr">
-                    </div>
-                    <a href="{{item.link_apple}}">
-                        <button class="install_button install_apple" data-destination="{{item.link_apple}}">
-                            Install
-                            <i class="fa-icon fa-solid fa-up-right-from-square"></i>
-                        </button>
-                    </a>
-                    {% else %}
-                        <div class="unavailable_filler">Sorry, this app isn't available on this platform</div>
+            <div class="app_container">
+                <div class=app_name_banner>
+                    <h2>{{item.name}}</h2>
+                    {% if item.vendor_site %}
+                        <a href={{item.vendor_site}}>
+                        <i class="fa-solid fa-arrow-up-right-from-square app_out_link"></i>
+                        </a>
                     {% endif %}
                 </div>
-                <div class="install_option">
-                    <h3>
-                        <div class="os_logo">
-                        <i class="fa-icon fa-brands fa-android"></i>
-                        </>
-                        </div>
-                        <div class="os_title">
-                        Android
-                        </div>
-                    </h3>
-                    {% if "android_id" in item %}
-                    <div class="image_container">
-                    <img src="qr_codes/android_{{item.android_id}}.png" class="install_qr">
-                    </div>
-                    <a href="{{item.link_android}}">
-                        <button class="install_button install_android">
-                            Install
-                            <i class="fa-icon fa-solid fa-up-right-from-square"></i>
-                        </button>
-                    </a>
-                    {% else %}
-                        <div class="unavailable_filler">Sorry, this app isn't available on this platform</div>
-                    {% endif %}
+                <div class="app_description">
+                    {{item.description}}
                 </div>
+                <div class=app_icon>
+                <div class="icon_padding"></div>
+                {% if "icon" in item %}
+                    <img src="icons/{{item.app_id}}.png" class="imgdiv">
+                {% endif %}
+                <div class="icon_padding"></div>
+                </div>
+                {{ install_option(item, "Apple", "fa-apple", "qr_codes/apple_"+ item.get("apple_id_str", "")+".png", item["link_apple"]) }}
+                {{ install_option(item, "Android", "fa-android", "qr_codes/android_"+item.get("android_id", "")+".png", item["link_android"]) }}
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-        <div class="footer_fill"></div>
     </body>
 </html>

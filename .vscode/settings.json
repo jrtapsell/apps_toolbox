@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "data/apps.yaml.json": "data/apps.yaml"
+    }
+}
