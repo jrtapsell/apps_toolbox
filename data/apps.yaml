@@ -33,7 +33,7 @@
   vendor_site: https://www.scottishtecharmy.org/soundscape
   name: Soundscape (Open-Source)
   apple_id: 6459021379
-  icon: https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/9e/95/1e/9e951ea0-0a75-bb45-a09c-ac779aebce79/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-85-220.png/1200x630wa.png
+  icon: https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/9e/95/1e/9e951ea0-0a75-bb45-a09c-ac779aebce79/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-85-220.png/246x0w.png
   price_model: Free
   description: |
     Soundscape- a 3D audio navigation app for the blind and visually-impaired, helping them to navigate complex environments with greater confidence and in greater safety
@@ -195,7 +195,7 @@
 - app_id: blindsquare
   name: BlindSquare
   apple_id: 500557255
-  icon: https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/15/4f/61/154f61f0-08b7-5820-83da-8be46fe7abcf/AppIcon-BSqP-0-0-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png
+  icon: https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/15/4f/61/154f61f0-08b7-5820-83da-8be46fe7abcf/AppIcon-BSqP-0-0-1x_U007emarketing-0-7-0-85-220.png/246x0w.png
   vendor_site: https://www.blindsquare.com/
   description: |
     BlindSquare is the world’s most widely used accessible GPS-app developed for the blind, deafblind and partially sighted. Paired with third-party navigation apps, BlindSquare’s self-voicing app delivers detailed points of interest and intersections for safe, reliable travel both outside and inside. Open the doors to enhanced independence with BlindSquare.
