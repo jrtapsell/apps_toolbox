@@ -4,13 +4,13 @@
   apple_id: 1590186766
   android_id: "io.aira.explorer"
   vendor_site: "https://aira.io/"
-  icon: https://airaio.kinsta.cloud/wp-content/uploads/2024/03/aira-fav.png
+  icon: https://play-lh.googleusercontent.com/JdFFV1fgGN25LUQYfBfhB0sku1nubZIF69iekMBWLkBlWNOCIl_n9HTjTRjjmO88Qw
   price_model: Paid
   description: |
     Aira is a service that connects people who are blind or have low vision to highly trained, remotely-located human agents. Through an app on your smartphone, Aira delivers instant access to visual information at the touch of a button – enhancing everyday efficiency, engagement, and independence. 
 - app_id: be_my_eyes
   name: Be My Eyes
-  icon: https://assets-global.website-files.com/5a5de2c1a0eb5000019e4dc0/5d9b02fbeaeaab4acd4f95fb_favicon-256x256.png
+  icon: https://play-lh.googleusercontent.com/1xTO2ugyjo0W9pmrm7w-BnAFmNYzlFILXioST9cwZ5RoYiBZifga2ArqCfXSXTwPxA
   price_model: Free
   vendor_site: https://www.bemyeyes.com/
   apple_id: 905177575
@@ -23,7 +23,7 @@
   name: Envision AI
   android_id: com.letsenvision.envisionai
   apple_id: 1268632314
-  icon: https://assets-global.website-files.com/5ac150ab7e9bbe927474fbde/62f0d861bf33036a6bb75d87_Webclip.png
+  icon: https://play-lh.googleusercontent.com/1MzMzGK9cMhm3hYcRAf3_QMsXjK13Z2L4XyadYb-YZWiKEAqeBiEQOJJxmc44LO_Fw
   price_model: Free
   vendor_site: https://www.letsenvision.com/envision-app
   description: |
@@ -33,12 +33,13 @@
   vendor_site: https://www.scottishtecharmy.org/soundscape
   name: Soundscape (Open-Source)
   apple_id: 6459021379
+  icon: https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/9e/95/1e/9e951ea0-0a75-bb45-a09c-ac779aebce79/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-85-220.png/1200x630wa.png
   price_model: Free
   description: |
     Soundscape- a 3D audio navigation app for the blind and visually-impaired, helping them to navigate complex environments with greater confidence and in greater safety
 - app_id: libby
   name: Libby
-  icon: https://images.contentstack.io/v3/assets/bltf6a42d9e46f07d48/blt0312775236ef8675/62d03a679e7c9e111e9447c1/favicon-96x96.png
+  icon: https://play-lh.googleusercontent.com/fsfzoSofx2cyzz-gFSUvSkh1TE9dDJ8lxRfBqykIuSzlfSvbX5SlFg1rXhOKvjkhGjg
   apple_id: 1076402606
   android_id: com.overdrive.mobile.android.libby
   price_model: Free
@@ -47,6 +48,7 @@
     Borrow ebooks, audiobooks, magazines, and more from your local library for free! Libby is the newer library reading app by OverDrive, loved by millions of readers worldwide.
 - app_id: scribd
   name: Everand
+  icon: https://play-lh.googleusercontent.com/i6RqZKwmmgvCq8FGoGewoEDWYq8Q2ghi8gUnWLBlPHmYCyRM4bl39YZTAoHu7mzU8vN7
   price_model: Paid
   apple_id: 542557212
   android_id: com.scribd.app.reader0
@@ -57,7 +59,7 @@
   name: Seeing AI
   android_id: com.microsoft.seeingai
   apple_id: 999062298
-  icon: https://www.seeingai.com/logo.png
+  icon: https://play-lh.googleusercontent.com/dePG5u15T0hZJgRINF5yFkm3i1zK0_J7fgN6zlx1mv4P-KYyVNihY_WCLbIlF8Xx1nA
   price_model: Free
   vendor_site: https://www.microsoft.com/en-us/ai/seeing-ai
   description: |
@@ -65,7 +67,7 @@
 - app_id: taptapsee
   name: TapTapSee
   price_model: Free
-  icon: https://taptapseeapp.com/assets/favicons/apple-touch-icon.png
+  icon: https://play-lh.googleusercontent.com/rL3dSbH52QqUGvfwyvn9g-IOkE-bTi1L2C7aZffwHMl-dUFMnjJ1o0vfSX_qS6-CBw
   apple_id: 567635020
   vendor_site: https://taptapseeapp.com/
   android_id: com.msearcher.taptapsee.android
@@ -78,18 +80,19 @@
   price_model: Paid
   vendor_site: https://www.nuance.com/en-gb/dragon/dragon-anywhere.html
   apple_id: 1024652126
-  icon: https://www.nuance.com/asset/shared-images/logos/nuance/logo-nuance-white-129x26-small.png
+  icon: https://play-lh.googleusercontent.com/W0FxtKAWvfYjVbFfCOgToZ389-5BjPOjyiZLp2ChZ_pwx3jWHPyNe8UZPnTCOTHkL5g
   android_id: com.nuance.dragonanywhere
   description: |
     Dictate documents of any length, easily edit, adjust formatting and quickly share them on the most popular cloud‑sharing services, directly from your iOS or Android smartphone or tablet.
 - app_id: audible
   name: Audible
-  icon: https://m.media-amazon.com/images/G/01/Audible/images/navigation/MobileWeb_IOSandAndroid_460._SY192_CB651482445_.png
+  icon: https://play-lh.googleusercontent.com/pwzZK-7oQexraeU0mOrQgFIck-QSS89rH0eWjehctp8XskRSpixPNVlA0YYlRXHbA2Iz
   price_model: Paid
   apple_id: 379693831
   android_id: com.audible.application
   vendor_site: https://www.audible.co.uk/
 - app_id: google_translate
+  icon: https://play-lh.googleusercontent.com/ZrNeuKthBirZN7rrXPN1JmUbaG8ICy3kZSHt-WgSnREsJzo2txzCzjIoChlevMIQEA
   name: Google Translate
   price_model: Free
   apple_id: 414706506
@@ -107,6 +110,7 @@
 - app_id: moovit
   price_model: Free
   name: Moovit
+  icon: https://play-lh.googleusercontent.com/_Ke5BPUO_fPpftH0isOcX-qocFfJvveYHPQu47S3wll4fR7X72fxUfeYNSy55xbmZZ9t
   apple_id: 498477945
   android_id: com.tranzmate
   vendor_site: https://moovit.com/features/
@@ -116,6 +120,7 @@
   name: Evelity
   apple_id: 1457329183
   android_id: com.okeenea.evelity
+  icon: https://play-lh.googleusercontent.com/m05CZB3yDkeHR-oVlY0qqxhpztiUVST8t9QWZRLPBLGtMxQXx122lWwSdiuX67yuRw
   vendor_site: https://www.evelity.com/en/
   description: |
     The first wayfinding solution for all types of disabilities, useful for everyone!
@@ -123,6 +128,7 @@
 - app_id: lookout
   name: Lookout - Assisted vision
   price_model: Free
+  icon: https://play-lh.googleusercontent.com/3MkDibPEhwEXy6ChCqPdTOQK_pRSABJvNMtolrMFra4I0G5U91K2jU4roMj8Up6vQRDI
   android_id: com.google.android.apps.accessibility.reveal
   description: |
     Seeing AI on Android
@@ -136,6 +142,7 @@
 #   vendor_site: https://www.aipoly.com/
 - app_id: roger_voice
   name: Roger Voice
+  icon: https://play-lh.googleusercontent.com/YIR9TBEZ1vhVJh6SHcQU9EeTTx5SExN4Ut_MPDKM7rw41hHEvFdkfUqBqvo6cc1JbQ
   price_model: Paid
   apple_id: 1033113354
   android_id: com.rogervoice.app
@@ -145,6 +152,7 @@
     Hearing difficulties should not prevent you from enjoying phone calls. Simply read the live transcriptions and you'll never miss out again.`
 - app_id: wheelmap
   name: Wheelmap
+  icon: https://play-lh.googleusercontent.com/UiwJ_I6e0YOKtQRLUba3bhWMTOac58e6MDimJNUzzX0XPfycBFWu_ivp86PFGgBs1w
   price_model: Free
   apple_id: 399239476
   android_id: org.wheelmap.android.online
@@ -153,6 +161,7 @@
     Wheelmap is devised to assist mobility-impaired people. Users can find wheelchair-accessible places on a virtual map of areas like restaurants, cafes, toilets, shops, cinemas, parking lots, bus stops and much more. Wheelmap is built on OpenStreetMap and everyone can enhance the data stored in this online world map by flagging locations, contributing comments, and uploading pictures.``
 - app_id: speechify
   name: Speechify
+  icon: https://play-lh.googleusercontent.com/KeE4TV1dcCZyd8iEYIYbOxBNPvdbMXs-VcJ-gNTA8En07mIVikts7dnT07PYk62dJ9er
   apple_id: 1209815023
   android_id: com.cliffweitzman.speechify2
   vendor_site: https://speechify.com/
@@ -164,10 +173,12 @@
   price_model: Free
   android_id: com.bt.relayuk
   vendor_site: https://www.relayuk.bt.com/
+  icon: https://play-lh.googleusercontent.com/vkp2O-d102_1TdHMPs85gmVFM9Zy4eXZJ5PfU9FGKHZQ9znKQ0Z7rN6a2gE06QOsHYE
   description: |
     The National Relay Service is a government initiative that allows people who are deaf, hard of hearing and have a speech impairment to make and receive phone calls. It features various call options, such as the ability to text and read speech, speaking to a friend but reading their responses on-screen, and signing conversation over Skype to be translated by a Relay Officer.
 - app_id: natural_reader
   name: Natural Reader
+  icon: https://play-lh.googleusercontent.com/dgzGsrWatFcom0s9Vxsr_1lWllEJPst0ZooA9OL2sLMbtdVhyhdXitNbj0mpWwG1em5K
   price_model: Free
   android_id: com.naturalsoft.personalweb
   vendor_site: https://www.naturalreaders.com/
@@ -176,7 +187,7 @@
   name: NaviLens
   android_id: com.neosistec.NaviLens
   apple_id: 1273704914
-  icon: https://www.navilens.com/apple-touch-icon.png
+  icon: https://play-lh.googleusercontent.com/5zsiROlM9l0vQdIrK8mVMfxZP_N_IOtnGfNv8KqHzoY5C_0qXqNo1hBvMyCWEo6viy4
   vendor_site: https://www.navilens.com/en/
   price_model: Free
   description: |
@@ -184,6 +195,7 @@
 - app_id: blindsquare
   name: BlindSquare
   apple_id: 500557255
+  icon: https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/15/4f/61/154f61f0-08b7-5820-83da-8be46fe7abcf/AppIcon-BSqP-0-0-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png
   vendor_site: https://www.blindsquare.com/
   description: |
     BlindSquare is the world’s most widely used accessible GPS-app developed for the blind, deafblind and partially sighted. Paired with third-party navigation apps, BlindSquare’s self-voicing app delivers detailed points of interest and intersections for safe, reliable travel both outside and inside. Open the doors to enhanced independence with BlindSquare.
@@ -191,12 +203,14 @@
   name: Lazarillo GPS for Blind
   apple_id: 1139331874
   android_id: com.lazarillo
+  icon: https://play-lh.googleusercontent.com/ewekh4KUna1Hzr799eQD1zLecmZtaZZMerWsrLcmOG_WKwmndJEdBqadJxk7xScnHpo
   vendor_site: https://lazarillo.app/
   description: |
     The intelligent guide application for blind people and visually impaired, who guides you by voice messages in the city
 - app_id: zuzanka
   name: Zuzanka
   apple_id: 6444279925
+  icon: https://play-lh.googleusercontent.com/9tIoMeNJVdVB7Z0LM0vdHJDyQaK85M1aNEOmdtrMnjcrrQm8C4OvVl0FZU2vBY2CtQM
   android_id: com.zuzanka
   description: |
     Zuzanka is the world's first expiry date scanner. The app makes it easy to locate expiration dates on food products, converts them to text format and allows export to other applications. Zuzanka was created to support the blind and visually impaired people, but it will be useful to anyone who wants to keep their kitchen tidy.
