@@ -57,7 +57,6 @@ button.install_button {
     flex-grow: 1;
     margin: 1em;
     padding: 1em;
-    font-size: 1.5em;
 }
 
 .install_button_android { background-color: var(--android_color);}
@@ -83,9 +82,16 @@ button.install_button {
     grid-row: 4/6;
     font-size: 2em;
 }
-.os_title {
-    font-size: 2em;
+@media  (max-width: 750px) {
+    div.app_container { max-width: 80%; }
+    .os_title { font-size: 1em; }
 }
+
+@media  (min-width: 750px) {
+    .os_title { font-size: 2em; }
+    .install_button{ font-size: 1.5em; }
+}
+
 @media print {
     .app_out_link {
         display: none;
