@@ -6,9 +6,12 @@ def main():
     data = load_data_file()
     r = session()
     for current in data:
-        if "android_id" not in current:
-            continue
-        resp = r.get(f"https://play.google.com/store/apps/details?id={current['android_id']}")
+        if "link_android" in current:
+            resp = r.get(current["link_android"])
+        elif "link_apple" in current:
+            resp = r.get(current["link_apple"])
+        else:
+            raise ValueError("Can't find icon")
         resp.raise_for_status()
         soup = BeautifulSoup(markup=resp.text, features="html.parser")
         meta = soup.select_one("meta[property='og:image']")
