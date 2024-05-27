@@ -62,8 +62,8 @@
                 {% endif %}
                 <div class="icon_padding"></div>
                 </div>
-                {{ install_option(item, "Apple", "fa-apple", "qr_codes/apple_"+ item.get("apple_id_str", "")+".png", item["link_apple"]) }}
-                {{ install_option(item, "Android", "fa-android", "qr_codes/android_"+item.get("android_id", "")+".png", item["link_android"]) }}
+                {{ install_option(item, "Apple", "fa-apple", "qr_codes/apple_"+ item.get("apple_id_str", "")+".svg", item["link_apple"]) }}
+                {{ install_option(item, "Android", "fa-android", "qr_codes/android_"+item.get("android_id", "")+".svg", item["link_android"]) }}
             </div>
             {% endfor %}
         </div>

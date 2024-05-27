@@ -6,6 +6,7 @@ import zipfile
 import pathlib
 import shutil
 import yaml
+import segno
 
 
 CACHE_DIR = pathlib.Path("cache")
@@ -54,16 +55,16 @@ def main():
     ensure_downloaded(FA_URL, fa_tmp)
 
     for (file_name, url, color) in [
-        (f"apple_{x['apple_id']}", x["link_apple"], "000099" ) for x in data if "link_apple" in x
+        (f"apple_{x['apple_id']}", x["link_apple"], "#000099" ) for x in data if "link_apple" in x
     ] + [
-        (f"android_{x['android_id']}", x["link_android"], "009900") for x in data if "link_android" in x
+        (f"android_{x['android_id']}", x["link_android"], "#009900") for x in data if "link_android" in x
     ]:
-        generator_url = f"https://api.qrserver.com/v1/create-qr-code/?size=500x500&data={url}&color={color}"
-        cached_file = CACHE_DIR / f"{file_name}.png"
+        cached_file = CACHE_DIR / f"{file_name}.svg"
         (OUT_DIR / "qr_codes").mkdir(exist_ok=True)
-        out_file = OUT_DIR / "qr_codes" / f"{file_name}.png"
+        out_file = OUT_DIR / "qr_codes" / f"{file_name}.svg"
 
-        ensure_downloaded(generator_url, cached_file)
+        qrcode = segno.make(url, micro=False, error="h")
+        qrcode.save(str(cached_file), dark=color, light="#eeeeee")
             
         shutil.copy(cached_file, out_file)
         
