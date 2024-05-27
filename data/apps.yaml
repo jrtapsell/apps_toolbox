@@ -29,20 +29,13 @@
   description: |
     Envision is a smartphone app that empowers blind and low vision users
     to be independent by speaking out the visual world around them.
-# No longer on store
-# - app_id: soundscape
-#   vendor_site: https://www.microsoft.com/en-us/research/product/soundscape/overview/
-#   name: Microsoft Soundscape
-#   apple_id: 1240320677
-#   price_model: Free
-#   description: |
-#     Immerse yourself in your surroundings and navigate effortlessly with Soundscape spatial audio.
-
-#     Microsoft Soundscape will place audio cues and labels in 3D space such that they sound like they are coming from the direction of the points of interest, parks, roads and other features in your surroundings.
-
-#     Switch between using Soundscape in the real world, or the virtual world, to help you build a picture of a place effortlessly with Street Preview.
-
-#     Soundscape is designed to live in the background and provide you with effortless ambient awareness. Therefore, feel free to use it in conjunction with other apps such as podcasts, audio books, email and even GPS navigation.
+- app_id: soundscape
+  vendor_site: https://www.scottishtecharmy.org/soundscape
+  name: Soundscape (Open-Source)
+  apple_id: 6459021379
+  price_model: Free
+  description: |
+    Soundscape- a 3D audio navigation app for the blind and visually-impaired, helping them to navigate complex environments with greater confidence and in greater safety
 - app_id: libby
   name: Libby
   icon: https://images.contentstack.io/v3/assets/bltf6a42d9e46f07d48/blt0312775236ef8675/62d03a679e7c9e111e9447c1/favicon-96x96.png

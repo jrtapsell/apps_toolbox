@@ -12,7 +12,7 @@ def main():
     )]
     r = session()
     for current in urls_to_check:
-        resp = r.head(current)
+        resp = r.head(current, allow_redirects=True)
         resp.raise_for_status()
 
 if __name__ == "__main__":
