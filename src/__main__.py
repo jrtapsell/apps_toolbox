@@ -29,19 +29,26 @@ def main():
     with DATA_FILE.open("r") as fd:
         data = json.load(fd)
 
+    for d in data:
+        if not d.get("app_id") or not d.get("name"):
+            raise AssertionError("Bad data file")
+
     for item in data:
-        item["link_apple"] = f"https://itunes.apple.com/us/app/keynote/id{item['apple_id']}?mt=8"
-        item["link_android"] = f"https://play.google.com/store/apps/details?id={item['android_id']}"
+        if 'apple_id' in item:
+            item["link_apple"] = f"https://itunes.apple.com/us/app/keynote/id{item['apple_id']}?mt=8"
+        if 'android_id' in item:
+            item["link_android"] = f"https://play.google.com/store/apps/details?id={item['android_id']}"
 
     fa_tmp = (CACHE_DIR / "fa.zip")
 
     ensure_downloaded(FA_URL, fa_tmp)
 
     for (file_name, url, color) in [
-        (f"apple_{x['apple_id']}", x["link_apple"], "000099" ) for x in data
+        (f"apple_{x['apple_id']}", x["link_apple"], "000099" ) for x in data if "link_apple" in x
     ] + [
-        (f"android_{x['android_id']}", x["link_android"], "009900") for x in data
+        (f"android_{x['android_id']}", x["link_android"], "009900") for x in data if "link_android" in x
     ]:
+        print(file_name, url, color)
         generator_url = f"https://api.qrserver.com/v1/create-qr-code/?size=500x500&data={url}&color={color}"
         cached_file = CACHE_DIR / f"{file_name}.png"
         (OUT_DIR / "qr_codes").mkdir(exist_ok=True)
@@ -82,6 +89,8 @@ def main():
     icon_dir = OUT_DIR / "icons"
     icon_dir.mkdir()
     for current in data:
+        if "icon" not in current:
+            continue
         out_file = icon_dir / f"{current['app_id']}.png"
         ensure_downloaded(current["icon"], out_file)
 

@@ -17,7 +17,12 @@
             <h2>{{item.name}}</h2>
             <div class="installer_containers">
                 <div class="app_icon_container">
+                    {% if "icon" in item %}
                     <img src="icons/{{item.app_id}}.png" class="app_icon">
+                    {% endif %}
+                    <div class="app_description">
+                        {{item.description}}
+                    </div>
                 </div>
                 <div class="install_option">
                     <h3>
@@ -28,6 +33,7 @@
                         Apple
                         </div>
                     </h3>
+                    {% if "apple_id" in item %}
                     <div class="image_container">
                     <img src="qr_codes/apple_{{item.apple_id}}.png" class="install_qr">
                     </div>
@@ -37,6 +43,9 @@
                             <i class="fa-icon fa-solid fa-up-right-from-square"></i>
                         </button>
                     </a>
+                    {% else %}
+                        <div class="unavailable_filler">Sorry, this app isn't available on this platform</div>
+                    {% endif %}
                 </div>
                 <div class="install_option">
                     <h3>
@@ -48,6 +57,7 @@
                         Android
                         </div>
                     </h3>
+                    {% if "android_id" in item %}
                     <div class="image_container">
                     <img src="qr_codes/android_{{item.android_id}}.png" class="install_qr">
                     </div>
@@ -57,6 +67,9 @@
                             <i class="fa-icon fa-solid fa-up-right-from-square"></i>
                         </button>
                     </a>
+                    {% else %}
+                        <div class="unavailable_filler">Sorry, this app isn't available on this platform</div>
+                    {% endif %}
                 </div>
             </div>
         </div>
