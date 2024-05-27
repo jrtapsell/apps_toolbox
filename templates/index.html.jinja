@@ -38,6 +38,13 @@
         {% for item in data_file %}
             <div class="app_container">
                 <div class=app_name_banner>
+                    {% if item.price_model == "Free" %}
+                        <i class="fa-solid fa-earth-europe app_model_icon" title="Free"></i>
+                    {% elif item.price_model == "Paid" %}
+                        <i class="fa-solid fa-circle-dollar-to-slot app_model_icon" title="Paid"></i>
+                    {% else %}
+                        <i class="fa-solid fa-question app_model_icon" title="Unknown"></i>
+                    {% endif %}
                     <h2>{{item.name}}</h2>
                     {% if item.vendor_site %}
                         <a href={{item.vendor_site}} aria-label="Find out more about {{item.name}}">

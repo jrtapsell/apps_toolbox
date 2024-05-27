@@ -78,7 +78,7 @@ button.install_button {
 .os_title {
     padding: 0 10%;
 }
-.app_out_link {
+.app_out_link,.app_model_icon {
     font-size: 3em;
 }
 .unavailable_filler_android,.unavailable_filler_apple {

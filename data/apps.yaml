@@ -4,10 +4,14 @@
   apple_id: 1590186766
   android_id: "io.aira.smart"
   vendor_site: "https://aira.io/"
+  icon: https://airaio.kinsta.cloud/wp-content/uploads/2024/03/aira-fav.png
+  price_model: Paid
   description: |
     Aira is a service that connects people who are blind or have low vision to highly trained, remotely-located human agents. Through an app on your smartphone, Aira delivers instant access to visual information at the touch of a button – enhancing everyday efficiency, engagement, and independence. 
 - app_id: be_my_eyes
   name: Be My Eyes
+  icon: https://assets-global.website-files.com/5a5de2c1a0eb5000019e4dc0/5d9b02fbeaeaab4acd4f95fb_favicon-256x256.png
+  price_model: Free
   vendor_site: https://www.bemyeyes.com/
   apple_id: 905177575
   android_id: com.bemyeyes.bemyeyes
@@ -29,6 +33,7 @@
   vendor_site: https://www.microsoft.com/en-us/research/product/soundscape/overview/
   name: Microsoft Soundscape
   apple_id: 1240320677
+  price_model: Free
   description: |
     Immerse yourself in your surroundings and navigate effortlessly with Soundscape spatial audio.
 
@@ -39,13 +44,16 @@
     Soundscape is designed to live in the background and provide you with effortless ambient awareness. Therefore, feel free to use it in conjunction with other apps such as podcasts, audio books, email and even GPS navigation.
 - app_id: libby
   name: Libby
+  icon: https://images.contentstack.io/v3/assets/bltf6a42d9e46f07d48/blt0312775236ef8675/62d03a679e7c9e111e9447c1/favicon-96x96.png
   apple_id: 1076402606
   android_id: com.overdrive.mobile.android.libby
+  price_model: Free
   vendor_site: https://www.overdrive.com/apps/libby
   description: |
     Borrow ebooks, audiobooks, magazines, and more from your local library for free! Libby is the newer library reading app by OverDrive, loved by millions of readers worldwide.
 - app_id: scribd
   name: Everand
+  price_model: Paid
   apple_id: 542557212
   android_id: com.scribd.app.reader0
   description: |
@@ -62,6 +70,8 @@
     A free app that narrates the world around you, now available in Italian, Turkish, Dutch, German, French, Japanese and Spanish.
 - app_id: taptapsee
   name: TapTapSee
+  price_model: Free
+  icon: https://taptapseeapp.com/assets/favicons/apple-touch-icon.png
   apple_id: 567635020
   vendor_site: https://taptapseeapp.com/
   android_id: com.msearcher.taptapsee.android
@@ -71,18 +81,23 @@
     Double-tap the right side of the screen to take a picture or double-tap the left side of the screen to take a video. TapTapSee can accurately analyze and identify any two or three dimensional object at any angle within seconds. The device’s VoiceOver then speaks the identification aloud.
 - app_id: dragon_anywhere
   name: Dragon Anywhere
+  price_model: Paid
   vendor_site: https://www.nuance.com/en-gb/dragon/dragon-anywhere.html
   apple_id: 1024652126
+  icon: https://www.nuance.com/asset/shared-images/logos/nuance/logo-nuance-white-129x26-small.png
   android_id: com.nuance.dragonanywhere
   description: |
     Dictate documents of any length, easily edit, adjust formatting and quickly share them on the most popular cloud‑sharing services, directly from your iOS or Android smartphone or tablet.
 - app_id: audible
   name: Audible
+  icon: https://m.media-amazon.com/images/G/01/Audible/images/navigation/MobileWeb_IOSandAndroid_460._SY192_CB651482445_.png
+  price_model: Paid
   apple_id: 379693831
   android_id: com.audible.application
   vendor_site: https://www.audible.co.uk/
 - app_id: google_translate
   name: Google Translate
+  price_model: Free
   apple_id: 414706506
   android_id: com.google.android.apps.translate
   description: |
@@ -96,6 +111,7 @@
     • Phrasebook: Star and save translated words and phrases for future reference (all languages)
   vendor_site: https://translate.google.co.uk/?hl=en&tab=TT
 - app_id: moovit
+  price_model: Free
   name: Moovit
   apple_id: 498477945
   android_id: com.tranzmate
@@ -112,17 +128,20 @@
     Our promise: to guide people with disabilities through complex places of everyday life, using a step-by-step guidance system like a pedestrian GPS, both indoors and outdoors.
 - app_id: lookout
   name: Lookout - Assisted vision
+  price_model: Free
   android_id: com.google.android.apps.accessibility.reveal
   description: |
     Seeing AI on Android
   vendor_site: https://support.google.com/accessibility/android/answer/9031274?hl=en-GB
 - app_id: ai_poly
   name: AI Poly
+  price_model: Free
   apple_id: 1069166437
   android_id: com.aipoly.vision
   vendor_site: https://www.aipoly.com/
 - app_id: roger_voice
   name: Roger Voice
+  price_model: Paid
   apple_id: 1033113354
   android_id: com.rogervoice.app
   vendor_site: https://rogervoice.com/en/
@@ -131,6 +150,7 @@
     Hearing difficulties should not prevent you from enjoying phone calls. Simply read the live transcriptions and you'll never miss out again.`
 - app_id: wheelmap
   name: Wheelmap
+  price_model: Free
   apple_id: 399239476
   android_id: org.wheelmap.android.online
   vendor_site: https://wheelmap.org/
@@ -146,12 +166,14 @@
 - app_id: nrs
   name: National Relay Service
   apple_id: 1483202788
+  price_model: Free
   android_id: com.bt.relayuk
   vendor_site: https://www.relayuk.bt.com/
   description: |
     The National Relay Service is a government initiative that allows people who are deaf, hard of hearing and have a speech impairment to make and receive phone calls. It features various call options, such as the ability to text and read speech, speaking to a friend but reading their responses on-screen, and signing conversation over Skype to be translated by a Relay Officer.
 - app_id: natural_reader
   name: Natural Reader
+  price_model: Free
   android_id: com.naturalsoft.personalweb
   vendor_site: https://www.naturalreaders.com/
   apple_id: 1487572960
