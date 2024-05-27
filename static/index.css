@@ -84,6 +84,8 @@ button.install_button {
 .unavailable_filler_android,.unavailable_filler_apple {
     grid-row: 4/6;
     font-size: 2em;
+    align-content: center;
+    flex-wrap: wrap;
 }
 @media  (max-width: 750px) {
     div.app_container { max-width: 80%; }
