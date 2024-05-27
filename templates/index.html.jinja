@@ -6,11 +6,11 @@
     </div>
     {% if app_link %}
         <div class="qr_container_{{platform_name.lower()}}">
-            <img src={{qr_image}} class="install_qr imgdiv">
+            <img src={{qr_image}} class="install_qr imgdiv" alt="QR code to download {{item.name}} for {{platform_name}} devices">
         </div>
         <div class="app_link_{{platform_name.lower()}}">
-        <a href="{{app_link}}" class="a_app_link">
-            <button class="install_button install_button_{{platform_name.lower()}}" data-destination="{{app_link}}">
+        <a href="{{app_link}}" class="a_app_link" tabindex="-1">
+            <button class="install_button install_button_{{platform_name.lower()}}" data-destination="{{app_link}}" tabindex="0" alt="Install link for {{item.name}} on {{platform_name}}">
             Install
             <i class="fa-icon fa-solid fa-up-right-from-square"></i>
             </button>
@@ -40,7 +40,7 @@
                 <div class=app_name_banner>
                     <h2>{{item.name}}</h2>
                     {% if item.vendor_site %}
-                        <a href={{item.vendor_site}}>
+                        <a href={{item.vendor_site}} aria-label="Find out more about {{item.name}}">
                         <i class="fa-solid fa-arrow-up-right-from-square app_out_link"></i>
                         </a>
                     {% endif %}
@@ -51,7 +51,7 @@
                 <div class=app_icon>
                 <div class="icon_padding"></div>
                 {% if "icon" in item %}
-                    <img src="icons/{{item.app_id}}.png" class="imgdiv">
+                    <img src="icons/{{item.app_id}}.png" class="imgdiv" alt="Icon for {{item.name}}">
                 {% endif %}
                 <div class="icon_padding"></div>
                 </div>
