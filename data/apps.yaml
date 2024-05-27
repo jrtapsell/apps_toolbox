@@ -2,7 +2,7 @@
 - app_id: aria
   name: Aria
   apple_id: 1590186766
-  android_id: "io.aira.smart"
+  android_id: "io.aira.explorer"
   vendor_site: "https://aira.io/"
   icon: https://airaio.kinsta.cloud/wp-content/uploads/2024/03/aira-fav.png
   price_model: Paid
@@ -29,19 +29,20 @@
   description: |
     Envision is a smartphone app that empowers blind and low vision users
     to be independent by speaking out the visual world around them.
-- app_id: soundscape
-  vendor_site: https://www.microsoft.com/en-us/research/product/soundscape/overview/
-  name: Microsoft Soundscape
-  apple_id: 1240320677
-  price_model: Free
-  description: |
-    Immerse yourself in your surroundings and navigate effortlessly with Soundscape spatial audio.
+# No longer on store
+# - app_id: soundscape
+#   vendor_site: https://www.microsoft.com/en-us/research/product/soundscape/overview/
+#   name: Microsoft Soundscape
+#   apple_id: 1240320677
+#   price_model: Free
+#   description: |
+#     Immerse yourself in your surroundings and navigate effortlessly with Soundscape spatial audio.
 
-    Microsoft Soundscape will place audio cues and labels in 3D space such that they sound like they are coming from the direction of the points of interest, parks, roads and other features in your surroundings.
+#     Microsoft Soundscape will place audio cues and labels in 3D space such that they sound like they are coming from the direction of the points of interest, parks, roads and other features in your surroundings.
 
-    Switch between using Soundscape in the real world, or the virtual world, to help you build a picture of a place effortlessly with Street Preview.
+#     Switch between using Soundscape in the real world, or the virtual world, to help you build a picture of a place effortlessly with Street Preview.
 
-    Soundscape is designed to live in the background and provide you with effortless ambient awareness. Therefore, feel free to use it in conjunction with other apps such as podcasts, audio books, email and even GPS navigation.
+#     Soundscape is designed to live in the background and provide you with effortless ambient awareness. Therefore, feel free to use it in conjunction with other apps such as podcasts, audio books, email and even GPS navigation.
 - app_id: libby
   name: Libby
   icon: https://images.contentstack.io/v3/assets/bltf6a42d9e46f07d48/blt0312775236ef8675/62d03a679e7c9e111e9447c1/favicon-96x96.png
@@ -133,12 +134,13 @@
   description: |
     Seeing AI on Android
   vendor_site: https://support.google.com/accessibility/android/answer/9031274?hl=en-GB
-- app_id: ai_poly
-  name: AI Poly
-  price_model: Free
-  apple_id: 1069166437
-  android_id: com.aipoly.vision
-  vendor_site: https://www.aipoly.com/
+# No longer on either store - Maybe gone?
+# - app_id: ai_poly
+#   name: AI Poly
+#   price_model: Free
+#   apple_id: 1069166437
+#   android_id: com.aipoly.vision
+#   vendor_site: https://www.aipoly.com/
 - app_id: roger_voice
   name: Roger Voice
   price_model: Paid
