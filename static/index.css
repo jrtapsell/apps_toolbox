@@ -96,6 +96,10 @@ button.install_button {
 }
 
 @media print {
+    div.app_container { 
+        max-width: 47% !important; 
+        width: 47% !important;
+    }
     .app_out_link {
         display: none;
     }
