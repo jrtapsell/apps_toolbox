@@ -11,6 +11,7 @@ import segno
 
 CACHE_DIR = pathlib.Path("cache")
 FA_URL = "https://use.fontawesome.com/releases/v6.5.1/fontawesome-free-6.5.1-web.zip"
+FONT_URL = "https://gwfh.mranftl.com/api/fonts/open-sans?download=zip&subsets=latin&variants=800,regular&formats=woff2"
 OUT_DIR = pathlib.Path("out")
 DATA_FILE = pathlib.Path("data") / "apps.yaml"
 STATIC_DIR = pathlib.Path("static")
@@ -64,7 +65,7 @@ def main():
         out_file = OUT_DIR / "qr_codes" / f"{file_name}.svg"
 
         qrcode = segno.make(url, micro=False, error="h")
-        qrcode.save(str(cached_file), dark=color, light="#eeeeee")
+        qrcode.save(str(cached_file), dark=color, light=None)
             
         shutil.copy(cached_file, out_file)
         
@@ -83,6 +84,11 @@ def main():
         ]:
             zip_ref.extract(file_name, OUT_DIR)
     (OUT_DIR / "fontawesome-free-6.5.1-web").rename(OUT_DIR / "fontawesome")
+
+    font_cache = CACHE_DIR / "opensans.zip"
+    ensure_downloaded(FONT_URL, font_cache)
+    with zipfile.ZipFile(font_cache, 'r') as zip_ref:
+        zip_ref.extract("open-sans-v40-latin-800.woff2", OUT_DIR)
     
 
     loader = FileSystemLoader("templates")
