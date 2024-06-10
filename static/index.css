@@ -134,10 +134,16 @@ button.install_button {
     }
 
     .all_apps_container {
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 33% 33% 33%;
     }
     .install_button_apple,.install_button_android {
         display: none;
+    }
+    .unavailable_filler_android,.unavailable_filler_apple {
+        font-size: 1.5em;
+    }
+    h1 {
+        font-size: 1em;
     }
 }
 
@@ -149,4 +155,8 @@ h1 {
 @font-face {
     font-family: 'OpenSans';
     src: url('/open-sans-v40-latin-800.woff2') format('woff2');
+}
+
+.install_qr {
+    object-fit: contain;
 }
