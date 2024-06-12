@@ -23,6 +23,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="An app launcher that links to various apps for the blind and visually impared">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             App Toolbox
@@ -35,9 +37,12 @@
     <body>
         <div class=apps_listing>
         <h1>App Toolbox</h1>
-        <div class="all_apps_container">
-        {% for item in data_file %}
-            <div class="app_container">
+        {% for (group_name, group_apps) in apps_grouped.items() %}
+        <details open>
+            <summary>{{group_name}} </summary>
+            <div class="all_apps_container">
+        {% for item in group_apps %}
+        <div class="app_container">
                 <div class=app_name_banner>
                     {% if item.price_model == "Free" %}
                         <i class="fa-solid fa-earth-europe app_model_icon" title="Free"></i>
@@ -68,6 +73,8 @@
             </div>
             {% endfor %}
             </div>
+            </details>
+            {% endfor %}
         </div>
     </body>
 </html>
