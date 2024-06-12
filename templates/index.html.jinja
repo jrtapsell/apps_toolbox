@@ -5,8 +5,10 @@
         <i class="fa-icon fa-brands {{icon_name}} os_logo"></i>
     </div>
     {% if app_link %}
-        <div class="qr_container_{{platform_name.lower()}}">
-            <img tabindex=0 src={{qr_image}} class="install_qr imgdiv" alt="QR code to download {{item.name}} for {{platform_name}} devices">
+        <div tabindex=0 class="qr_container_{{platform_name.lower()}}">
+            <div class="fullscreen_decoration">Install {{item.name}} on {{platform_name}}</div>
+            <img src={{qr_image}} class="install_qr imgdiv" alt="QR code to download {{item.name}} for {{platform_name}} devices">
+            <div class="fullscreen_decoration exit_fullscreen">Go back to page</div>
         </div>
         <div class="app_link_{{platform_name.lower()}}">
         <a target="_blank" href="{{app_link}}" class="a_app_link" tabindex="-1">
