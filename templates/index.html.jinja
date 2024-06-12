@@ -6,7 +6,7 @@
     </div>
     {% if app_link %}
         <div class="qr_container_{{platform_name.lower()}}">
-            <img src={{qr_image}} class="install_qr imgdiv" alt="QR code to download {{item.name}} for {{platform_name}} devices">
+            <img tabindex=0 src={{qr_image}} class="install_qr imgdiv" alt="QR code to download {{item.name}} for {{platform_name}} devices">
         </div>
         <div class="app_link_{{platform_name.lower()}}">
         <a target="_blank" href="{{app_link}}" class="a_app_link" tabindex="-1">
@@ -77,4 +77,5 @@
             {% endfor %}
         </div>
     </body>
+    <script src="/static/index.js"></script>
 </html>

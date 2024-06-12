@@ -166,3 +166,7 @@ summary {
     background-color: #ccc;
     margin-bottom: 0.1em;
 }
+
+.install_qr:fullscreen {
+    background-color: white !important;
+}
