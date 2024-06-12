@@ -6,10 +6,12 @@
   vendor_site: "https://aira.io/"
   icon: https://play-lh.googleusercontent.com/JdFFV1fgGN25LUQYfBfhB0sku1nubZIF69iekMBWLkBlWNOCIl_n9HTjTRjjmO88Qw
   price_model: Paid
+  category: Communication
   description: |
     Aira is a service that connects people who are blind or have low vision to highly trained, remotely-located human agents. Through an app on your smartphone, Aira delivers instant access to visual information at the touch of a button – enhancing everyday efficiency, engagement, and independence. 
 - app_id: be_my_eyes
   name: Be My Eyes
+  category: Communication
   icon: https://play-lh.googleusercontent.com/1xTO2ugyjo0W9pmrm7w-BnAFmNYzlFILXioST9cwZ5RoYiBZifga2ArqCfXSXTwPxA
   price_model: Free
   vendor_site: https://www.bemyeyes.com/
@@ -25,6 +27,7 @@
   apple_id: 1268632314
   icon: https://play-lh.googleusercontent.com/1MzMzGK9cMhm3hYcRAf3_QMsXjK13Z2L4XyadYb-YZWiKEAqeBiEQOJJxmc44LO_Fw
   price_model: Free
+  category: Communication
   vendor_site: https://www.letsenvision.com/envision-app
   description: |
     Envision is a smartphone app that empowers blind and low vision users
@@ -35,6 +38,7 @@
   apple_id: 6459021379
   icon: https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/9e/95/1e/9e951ea0-0a75-bb45-a09c-ac779aebce79/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-85-220.png/246x0w.png
   price_model: Free
+  category: Navigation
   description: |
     Soundscape- a 3D audio navigation app for the blind and visually-impaired, helping them to navigate complex environments with greater confidence and in greater safety
 - app_id: libby
@@ -43,6 +47,7 @@
   apple_id: 1076402606
   android_id: com.overdrive.mobile.android.libby
   price_model: Free
+  category: Entertainment
   vendor_site: https://www.overdrive.com/apps/libby
   description: |
     Borrow ebooks, audiobooks, magazines, and more from your local library for free! Libby is the newer library reading app by OverDrive, loved by millions of readers worldwide.
@@ -51,12 +56,14 @@
   icon: https://play-lh.googleusercontent.com/i6RqZKwmmgvCq8FGoGewoEDWYq8Q2ghi8gUnWLBlPHmYCyRM4bl39YZTAoHu7mzU8vN7
   price_model: Paid
   apple_id: 542557212
+  category: Entertainment
   android_id: com.scribd.app.reader0
   description: |
     Read or listen anytime, anywhere.
   vendor_site: https://www.scribd.com/
 - app_id: seeing_ai
   name: Seeing AI
+  category: Communication
   android_id: com.microsoft.seeingai
   apple_id: 999062298
   icon: https://play-lh.googleusercontent.com/dePG5u15T0hZJgRINF5yFkm3i1zK0_J7fgN6zlx1mv4P-KYyVNihY_WCLbIlF8Xx1nA
@@ -66,6 +73,7 @@
     A free app that narrates the world around you, now available in Italian, Turkish, Dutch, German, French, Japanese and Spanish.
 - app_id: taptapsee
   name: TapTapSee
+  category: Communication
   price_model: Free
   icon: https://play-lh.googleusercontent.com/rL3dSbH52QqUGvfwyvn9g-IOkE-bTi1L2C7aZffwHMl-dUFMnjJ1o0vfSX_qS6-CBw
   apple_id: 567635020
@@ -78,6 +86,7 @@
 - app_id: dragon_anywhere
   name: Dragon Anywhere
   price_model: Paid
+  category: Communication
   vendor_site: https://www.nuance.com/en-gb/dragon/dragon-anywhere.html
   apple_id: 1024652126
   icon: https://play-lh.googleusercontent.com/W0FxtKAWvfYjVbFfCOgToZ389-5BjPOjyiZLp2ChZ_pwx3jWHPyNe8UZPnTCOTHkL5g
@@ -86,6 +95,7 @@
     Dictate documents of any length, easily edit, adjust formatting and quickly share them on the most popular cloud‑sharing services, directly from your iOS or Android smartphone or tablet.
 - app_id: audible
   name: Audible
+  category: Entertainment
   icon: https://play-lh.googleusercontent.com/pwzZK-7oQexraeU0mOrQgFIck-QSS89rH0eWjehctp8XskRSpixPNVlA0YYlRXHbA2Iz
   price_model: Paid
   apple_id: 379693831
@@ -95,6 +105,7 @@
   icon: https://play-lh.googleusercontent.com/ZrNeuKthBirZN7rrXPN1JmUbaG8ICy3kZSHt-WgSnREsJzo2txzCzjIoChlevMIQEA
   name: Google Translate
   price_model: Free
+  category: Communication
   apple_id: 414706506
   android_id: com.google.android.apps.translate
   description: |
@@ -109,6 +120,7 @@
   vendor_site: https://translate.google.co.uk/?hl=en&tab=TT
 - app_id: moovit
   price_model: Free
+  category: Navigation
   name: Moovit
   icon: https://play-lh.googleusercontent.com/_Ke5BPUO_fPpftH0isOcX-qocFfJvveYHPQu47S3wll4fR7X72fxUfeYNSy55xbmZZ9t
   apple_id: 498477945
@@ -118,6 +130,7 @@
     Moovit has optimized every screen across the app for VoiceOver and TalkBack technologies (screen-reading) on iOS and Android devices. With this enhanced accessibility integration, users use gestures to navigate through screen elements and focus on them. Once the focus is on an element, including buttons and labels, the VoiceOver / TalkBack feature reads aloud the text that appears on it. Specifically, with Moovit’s “Live Directions” feature, the user gets step-by-step GPS-style guidance for their journey and even receives alerts when the bus is arriving or “Get Off Alerts” to get ready before they’ve reached their destination stop. 
 - app_id: evelity
   name: Evelity
+  category: Navigation
   apple_id: 1457329183
   android_id: com.okeenea.evelity
   icon: https://play-lh.googleusercontent.com/m05CZB3yDkeHR-oVlY0qqxhpztiUVST8t9QWZRLPBLGtMxQXx122lWwSdiuX67yuRw
@@ -128,6 +141,7 @@
 - app_id: lookout
   name: Lookout - Assisted vision
   price_model: Free
+  category: Communication
   icon: https://play-lh.googleusercontent.com/3MkDibPEhwEXy6ChCqPdTOQK_pRSABJvNMtolrMFra4I0G5U91K2jU4roMj8Up6vQRDI
   android_id: com.google.android.apps.accessibility.reveal
   description: |
@@ -142,6 +156,7 @@
 #   vendor_site: https://www.aipoly.com/
 - app_id: roger_voice
   name: Roger Voice
+  category: Communication
   icon: https://play-lh.googleusercontent.com/YIR9TBEZ1vhVJh6SHcQU9EeTTx5SExN4Ut_MPDKM7rw41hHEvFdkfUqBqvo6cc1JbQ
   price_model: Paid
   apple_id: 1033113354
@@ -152,6 +167,7 @@
     Hearing difficulties should not prevent you from enjoying phone calls. Simply read the live transcriptions and you'll never miss out again.`
 - app_id: wheelmap
   name: Wheelmap
+  category: Navigation
   icon: https://play-lh.googleusercontent.com/UiwJ_I6e0YOKtQRLUba3bhWMTOac58e6MDimJNUzzX0XPfycBFWu_ivp86PFGgBs1w
   price_model: Free
   apple_id: 399239476
@@ -161,6 +177,7 @@
     Wheelmap is devised to assist mobility-impaired people. Users can find wheelchair-accessible places on a virtual map of areas like restaurants, cafes, toilets, shops, cinemas, parking lots, bus stops and much more. Wheelmap is built on OpenStreetMap and everyone can enhance the data stored in this online world map by flagging locations, contributing comments, and uploading pictures.``
 - app_id: speechify
   name: Speechify
+  category: Communication
   icon: https://play-lh.googleusercontent.com/KeE4TV1dcCZyd8iEYIYbOxBNPvdbMXs-VcJ-gNTA8En07mIVikts7dnT07PYk62dJ9er
   apple_id: 1209815023
   android_id: com.cliffweitzman.speechify2
@@ -171,6 +188,7 @@
   name: National Relay Service
   apple_id: 1483202788
   price_model: Free
+  category: Communication
   android_id: com.bt.relayuk
   vendor_site: https://www.relayuk.bt.com/
   icon: https://play-lh.googleusercontent.com/vkp2O-d102_1TdHMPs85gmVFM9Zy4eXZJ5PfU9FGKHZQ9znKQ0Z7rN6a2gE06QOsHYE
@@ -180,11 +198,13 @@
   name: Natural Reader
   icon: https://play-lh.googleusercontent.com/dgzGsrWatFcom0s9Vxsr_1lWllEJPst0ZooA9OL2sLMbtdVhyhdXitNbj0mpWwG1em5K
   price_model: Free
+  category: Communication
   android_id: com.naturalsoft.personalweb
   vendor_site: https://www.naturalreaders.com/
   apple_id: 1487572960
 - app_id: navilens
   name: NaviLens
+  category: Navigation
   android_id: com.neosistec.NaviLens
   apple_id: 1273704914
   icon: https://play-lh.googleusercontent.com/5zsiROlM9l0vQdIrK8mVMfxZP_N_IOtnGfNv8KqHzoY5C_0qXqNo1hBvMyCWEo6viy4
@@ -194,6 +214,7 @@
     NaviLens, an app that makes it easier for visual impaired people to access information through QR codes of colors, has a new functionality available for users to download tags for their own personal use. Until now these tags were available in public spaces such as train stations. In this new functionality, the codes provided are blank for users to record any information about the objects in their environment. The developers have created tags of different sizes that can be adjusted to the needs of remote reading. In addition, they are printable and easily separated.
 - app_id: blindsquare
   name: BlindSquare
+  category: Navigation
   apple_id: 500557255
   icon: https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/15/4f/61/154f61f0-08b7-5820-83da-8be46fe7abcf/AppIcon-BSqP-0-0-1x_U007emarketing-0-7-0-85-220.png/246x0w.png
   vendor_site: https://www.blindsquare.com/
@@ -202,6 +223,7 @@
 - app_id: lazarillo
   name: Lazarillo GPS for Blind
   apple_id: 1139331874
+  category: Navigation
   android_id: com.lazarillo
   icon: https://play-lh.googleusercontent.com/ewekh4KUna1Hzr799eQD1zLecmZtaZZMerWsrLcmOG_WKwmndJEdBqadJxk7xScnHpo
   vendor_site: https://lazarillo.app/
@@ -209,6 +231,7 @@
     The intelligent guide application for blind people and visually impaired, who guides you by voice messages in the city
 - app_id: zuzanka
   name: Zuzanka
+  category: Communication
   apple_id: 6444279925
   icon: https://play-lh.googleusercontent.com/9tIoMeNJVdVB7Z0LM0vdHJDyQaK85M1aNEOmdtrMnjcrrQm8C4OvVl0FZU2vBY2CtQM
   android_id: com.zuzanka

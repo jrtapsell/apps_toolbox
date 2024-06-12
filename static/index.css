@@ -160,3 +160,9 @@ h1 {
 .install_qr {
     object-fit: contain;
 }
+
+summary {
+    font-size: 2em;
+    background-color: #ccc;
+    margin-bottom: 0.1em;
+}

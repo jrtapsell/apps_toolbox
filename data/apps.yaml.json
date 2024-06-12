@@ -31,9 +31,13 @@
             "vendor_site": {
                 "type": "string",
                 "pattern": "^https://.*"
+            },
+            "category": {
+                "type": "string",
+                "enum": ["Communication", "Entertainment", "Navigation"]
             }
         },
         "additionalProperties": false,
-        "required": ["app_id", "name"]
+        "required": ["app_id", "name", "category"]
     }
 }

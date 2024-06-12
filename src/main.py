@@ -7,6 +7,7 @@ import pathlib
 import shutil
 import yaml
 import segno
+from itertools import groupby
 
 
 CACHE_DIR = pathlib.Path("cache")
@@ -95,7 +96,10 @@ def main():
     env = Environment(loader=loader)
     temp = env.get_template("index.html.jinja")
 
-    comp = temp.render(data_file=data)
+    grouped = {x[0]: sorted(x[1], key=lambda x:x["name"]) for x in groupby(
+        sorted(data, key=lambda x:x["category"]),
+        key = lambda x: x["category"])}
+    comp = temp.render(apps_grouped=grouped)
 
     with (OUT_DIR / "index.html").open("w") as fd:
         fd.write(comp)
