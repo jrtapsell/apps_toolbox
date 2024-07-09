@@ -1,5 +1,5 @@
-*:focus, *[tabindex='0']:hover {
-    background-color: brown !important;
+*:focus:not(:fullscreen), *[tabindex='0']:hover:not(:fullscreen) {
+    background-color: brown;
 }
 .app_container > div {
     border: 1px solid #555;
@@ -164,4 +164,54 @@ summary {
     font-size: 2em;
     background-color: #ccc;
     margin-bottom: 0.1em;
+}
+.fullscreen_decoration {
+    display: none;
+}
+div:fullscreen {
+    background-color: white !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+*:fullscreen > .fullscreen_decoration {
+    display: flex;
+    background: #ccc;
+    width: 100%;
+    font-size: 2em;
+    flex-grow: 1;
+}
+*:fullscreen > div.fullscreen_footer_text {
+    display: inline-block;
+}
+div:fullscreen>.install_qr {
+    max-width: 90%;
+    max-height: 65%;
+    margin: 0;
+    padding: 0;
+    flex-grow: 0;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+img.smallicon {
+    height: 3em;
+    width: 3em;
+}
+
+div.fullscreen_headline_text, div.fullscreen_footer_text {
+    flex-grow: 1;
+}
+
+.col_flex_container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.col_flex_spacer {
+    flex-grow: 1;
 }

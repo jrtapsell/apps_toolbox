@@ -5,8 +5,30 @@
         <i class="fa-icon fa-brands {{icon_name}} os_logo"></i>
     </div>
     {% if app_link %}
-        <div class="qr_container_{{platform_name.lower()}}">
+        <div tabindex=0 class="qr_container_{{platform_name.lower()}}">
+            <div class="fullscreen_decoration">
+                <div class="fullscreen_headline_image col_flex_container">
+                    <div class="col_flex_spacer"></div>
+                    <img src="icons/{{item.app_id}}.png" class="imgdiv smallicon" alt="Icon for {{item.name}}">
+                    <div class="col_flex_spacer"></div>
+                </div>
+                <div class="fullscreen_headline_text col_flex_container">
+                    <div class="col_flex_spacer"></div>
+                    <div>Install</div>
+                    <div>{{item.name}}</div>
+                    <div>on</div>
+                    <div>{{platform_name}}</div>
+                    <div class="col_flex_spacer"></div>
+                </div>
+            </div>
             <img src={{qr_image}} class="install_qr imgdiv" alt="QR code to download {{item.name}} for {{platform_name}} devices">
+            <div class="fullscreen_decoration exit_fullscreen fullscreen_footer_text">
+                <div class="col_flex_container">
+                    <div class="col_flex_spacer"></div>
+                    <div>Go back to page</div>
+                    <div class="col_flex_spacer"></div>
+                </div>
+            </div>
         </div>
         <div class="app_link_{{platform_name.lower()}}">
         <a target="_blank" href="{{app_link}}" class="a_app_link" tabindex="-1">
@@ -77,4 +99,5 @@
             {% endfor %}
         </div>
     </body>
+    <script src="/static/index.js"></script>
 </html>
