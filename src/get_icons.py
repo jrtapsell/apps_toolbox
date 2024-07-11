@@ -1,6 +1,7 @@
-from requests import session
-from .main import load_data_file
 from bs4 import BeautifulSoup
+from requests import session
+
+from .main import load_data_file
 
 
 def main():

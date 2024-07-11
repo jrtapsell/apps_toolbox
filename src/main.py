@@ -1,14 +1,13 @@
-import json
-from jinja2 import Environment
-from jinja2.loaders import FileSystemLoader
-import requests
-import zipfile
 import pathlib
 import shutil
-import yaml
-import segno
+import zipfile
 from itertools import groupby
 
+import requests
+import segno
+import yaml
+from jinja2 import Environment
+from jinja2.loaders import FileSystemLoader
 
 CACHE_DIR = pathlib.Path("cache")
 FA_URL = "https://use.fontawesome.com/releases/v6.5.1/fontawesome-free-6.5.1-web.zip"
