@@ -1,45 +1,45 @@
 {% macro install_option(item, platform_name, icon_name, qr_image, app_link) %}
-    <div class="os_title_{{platform_name.lower()}} os_title">
-        <i class="fa-icon fa-brands {{icon_name}} os_logo"></i>
-        <div class=os_name>{{platform_name}}</div>
-        <i class="fa-icon fa-brands {{icon_name}} os_logo"></i>
+    <div class="os-title-{{platform_name.lower()}} os-title">
+        <i class="fa-icon fa-brands {{icon_name}} os-logo"></i>
+        <div class="os-name">{{platform_name}}</div>
+        <i class="fa-icon fa-brands {{icon_name}} os-logo"></i>
     </div>
     {% if app_link %}
-        <div tabindex=0 class="qr_container_{{platform_name.lower()}}">
-            <div class="fullscreen_decoration">
-                <div class="fullscreen_headline_image col_flex_container">
-                    <div class="col_flex_spacer"></div>
+        <div tabindex=0 class="qr-container-{{platform_name.lower()}}">
+            <div class="fullscreen-decoration">
+                <div class="fullscreen-headline-image col-flex-container">
+                    <div class="col-flex-spacer"></div>
                     <img src="icons/{{item.app_id}}.png" class="imgdiv smallicon" alt="Icon for {{item.name}}">
-                    <div class="col_flex_spacer"></div>
+                    <div class="col-flex-spacer"></div>
                 </div>
-                <div class="fullscreen_headline_text col_flex_container">
-                    <div class="col_flex_spacer"></div>
+                <div class="fullscreen-headline-text col-flex-container">
+                    <div class="col-flex-spacer"></div>
                     <div>Install</div>
                     <div>{{item.name}}</div>
                     <div>on</div>
                     <div>{{platform_name}}</div>
-                    <div class="col_flex_spacer"></div>
+                    <div class="col-flex-spacer"></div>
                 </div>
             </div>
-            <img src={{qr_image}} class="install_qr imgdiv" alt="QR code to download {{item.name}} for {{platform_name}} devices">
-            <div class="fullscreen_decoration exit_fullscreen fullscreen_footer_text">
-                <div class="col_flex_container">
-                    <div class="col_flex_spacer"></div>
+            <img src={{qr_image}} class="install-qr imgdiv" alt="QR code to download {{item.name}} for {{platform_name}} devices">
+            <div class="fullscreen-decoration exit-fullscreen fullscreen-footer-text">
+                <div class="col-flex-container">
+                    <div class="col-flex-spacer"></div>
                     <div>Go back to page</div>
-                    <div class="col_flex_spacer"></div>
+                    <div class="col-flex-spacer"></div>
                 </div>
             </div>
         </div>
-        <div class="app_link_{{platform_name.lower()}}">
-        <a target="_blank" href="{{app_link}}" class="a_app_link" tabindex="-1">
-            <button class="install_button install_button_{{platform_name.lower()}}" data-destination="{{app_link}}" tabindex="0" alt="Install link for {{item.name}} on {{platform_name}}">
+        <div class="app-link-{{platform_name.lower()}}">
+        <a target="_blank" href="{{app_link}}" class="a-app-link" tabindex="-1">
+            <button class="install-button install-button-{{platform_name.lower()}}" data-destination="{{app_link}}" tabindex="0" alt="Install link for {{item.name}} on {{platform_name}}">
             Install
             <i class="fa-icon fa-solid fa-up-right-from-square"></i>
             </button>
         </a>
         </div>
     {% else %}
-        <div class="unavailable_filler_{{platform_name.lower()}}">Sorry, this app isn't available on this platform</div>
+        <div class="unavailable-filler">Sorry, this app isn't available on this platform</div>
     {% endif %}
 {% endmacro %}
 <!DOCTYPE html>
@@ -57,38 +57,38 @@
         <link href="static/index.css" rel="stylesheet" />
     </head>
     <body>
-        <div class=apps_listing>
+        <div class="apps-listing">
         <h1>App Toolbox</h1>
         {% for (group_name, group_apps) in apps_grouped.items() %}
         <details open>
             <summary>{{group_name}} </summary>
-            <div class="all_apps_container">
+            <div class="all-apps-container">
         {% for item in group_apps %}
-        <div class="app_container">
-                <div class=app_name_banner>
+        <div class="app-container">
+                <div class="app-name-banner">
                     {% if item.price_model == "Free" %}
-                        <i class="fa-solid fa-earth-europe app_model_icon" title="Free"></i>
+                        <i class="fa-solid fa-earth-europe app-model-icon" title="Free"></i>
                     {% elif item.price_model == "Paid" %}
-                        <i class="fa-solid fa-circle-dollar-to-slot app_model_icon" title="Paid"></i>
+                        <i class="fa-solid fa-circle-dollar-to-slot app-model-icon" title="Paid"></i>
                     {% else %}
-                        <i class="fa-solid fa-question app_model_icon" title="Unknown"></i>
+                        <i class="fa-solid fa-question app-model-icon" title="Unknown"></i>
                     {% endif %}
                     <h2>{{item.name}}</h2>
                     {% if item.vendor_site %}
                         <a target="_blank" href={{item.vendor_site}} aria-label="Find out more about {{item.name}}" tabindex="0">
-                        <i class="fa-solid fa-arrow-up-right-from-square app_out_link"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square app-out-link"></i>
                         </a>
                     {% endif %}
                 </div>
-                <div class="app_description">
+                <div class="app-description">
                     {{item.description}}
                 </div>
-                <div class=app_icon>
-                <div class="icon_padding"></div>
+                <div class="app-icon">
+                <div class="icon-padding"></div>
                 {% if "icon" in item %}
                     <img src="icons/{{item.app_id}}.png" class="imgdiv" alt="Icon for {{item.name}}">
                 {% endif %}
-                <div class="icon_padding"></div>
+                <div class="icon-padding"></div>
                 </div>
                 {{ install_option(item, "Apple", "fa-apple", "qr_codes/apple_"+ item.get("apple_id_str", "")+".svg", item["link_apple"]) }}
                 {{ install_option(item, "Android", "fa-android", "qr_codes/android_"+item.get("android_id", "")+".svg", item["link_android"]) }}
