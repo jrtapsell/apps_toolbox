@@ -99,7 +99,7 @@ def render_template(**args):
     Renders the template with the given data 
     """
     loader = FileSystemLoader("templates")
-    env = Environment(loader=loader)
+    env = Environment(loader=loader, autoescape=True)
     temp = env.get_template("index.html.jinja")
     comp = temp.render(**args)
     return comp
