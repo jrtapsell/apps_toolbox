@@ -4,6 +4,8 @@ on:
     branches:    
       - main
 
+permissions: { }
+
 concurrency:
   group: release-group
   cancel-in-progress: true

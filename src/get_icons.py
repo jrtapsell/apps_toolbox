@@ -1,6 +1,8 @@
-from requests import session
-from .main import load_data_file
 from bs4 import BeautifulSoup
+from requests import session
+
+from .main import load_data_file
+
 
 def main():
     data = load_data_file()
@@ -16,6 +18,7 @@ def main():
         soup = BeautifulSoup(markup=resp.text, features="html.parser")
         meta = soup.select_one("meta[property='og:image']")
         print(current["name"], meta.attrs["content"])
+
 
 if __name__ == "__main__":
     main()
