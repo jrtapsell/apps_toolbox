@@ -1,4 +1,4 @@
-name: 'Build Workflow'
+name: 'Build the site and possibly deploy'
 on:
   push: {}
 
