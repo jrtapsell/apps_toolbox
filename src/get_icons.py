@@ -1,6 +1,7 @@
 """
 Gets the links to the configured apps
 """
+
 from bs4 import BeautifulSoup
 from requests import session
 

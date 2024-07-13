@@ -1,9 +1,11 @@
 """
 Checks the configured out-links for apps to see they exist
 """
+
 from requests import session
 
 from .main import load_data_file
+
 
 def main():
     """
