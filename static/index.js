@@ -1,4 +1,4 @@
-[...document.querySelectorAll('img.install_qr')].forEach(imageelement => {
+[...document.querySelectorAll('img.install-qr')].forEach(imageelement => {
   imageelement = imageelement.parentElement
   imageelement.onclick = () => {
     imageelement.requestFullscreen()
@@ -23,7 +23,7 @@
   })
 });
 
-[...document.querySelectorAll('.exit_fullscreen')].forEach((p) => {
+[...document.querySelectorAll('.exit-fullscreen')].forEach((p) => {
   p.onclick = () => {
     document.exitFullscreen()
   }
