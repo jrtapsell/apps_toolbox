@@ -1,3 +1,7 @@
+"""
+Gets the links to the configured apps
+"""
+
 from bs4 import BeautifulSoup
 from requests import session
 
@@ -5,6 +9,9 @@ from .main import load_data_file
 
 
 def main():
+    """
+    The main method
+    """
     data = load_data_file()
     r = session()
     for current in data:

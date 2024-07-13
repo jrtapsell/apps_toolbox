@@ -1,4 +1,2 @@
 [MESSAGES CONTROL]
-disable=missing-module-docstring,import-error,missing-function-docstring,too-many-locals
-[FORMAT]
-max-line-length=120
+disable=import-error

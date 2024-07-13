@@ -1,8 +1,6 @@
-name: 'Build Workflow'
+name: 'Build the site and possibly deploy'
 on:
-  push:
-    branches:    
-      - main
+  push: {}
 
 permissions: { }
 
@@ -18,8 +16,11 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: "python -m pip install -r ./requirements.txt"
+        name: "Install build dependencies"
       - run: "python -m src"
       - uses: jsmrcaga/action-netlify-deploy@v2.0.0
+        name: "Deploy to PRD"
+        if: github.ref == 'refs/heads/develop'
         with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.MY_TOKEN_SECRET }}
           NETLIFY_DEPLOY_TO_PROD: true

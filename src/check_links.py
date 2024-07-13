@@ -1,9 +1,16 @@
+"""
+Checks the configured out-links for apps to see they exist
+"""
+
 from requests import session
 
 from .main import load_data_file
 
 
 def main():
+    """
+    Main method - checks the links
+    """
     data = load_data_file()
     urls_to_check = [
         *(x["link_apple"] for x in data if "link_apple" in x),

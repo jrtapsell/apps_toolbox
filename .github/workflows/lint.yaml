@@ -1,5 +1,5 @@
 ---
-name: Lint
+name: Run SuperLint
 
 on:  # yamllint disable-line rule:truthy
   push: null
