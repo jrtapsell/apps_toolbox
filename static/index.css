@@ -241,6 +241,11 @@ div:fullscreen {
     flex-grow: 1;
 }
 
+div.fullscreen-headline-text,
+div.fullscreen-footer-text {
+    flex-grow: 1;
+}
+
 *:fullscreen>div.fullscreen-footer-text {
     display: inline-block;
 }
@@ -261,11 +266,6 @@ p {
 img.smallicon {
     height: 3em;
     width: 3em;
-}
-
-div.fullscreen-headline-text,
-div.fullscreen-footer-text {
-    flex-grow: 1;
 }
 
 .col-flex-container {
