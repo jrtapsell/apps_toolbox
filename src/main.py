@@ -1,7 +1,6 @@
 """
 The build script logic
 """
-
 import pathlib
 import shutil
 import zipfile
@@ -77,7 +76,6 @@ def ensure_cached_qrcode(file_name: str, url: str, color: str) -> pathlib.Path:
     qrcode.save(str(cached_file), dark=color, light=None)
     return cached_file
 
-
 def unpack_fontawesome(fa_tmp: pathlib.Path):
     """
     Unpacks the files we use from fontawesome
@@ -98,14 +96,13 @@ def unpack_fontawesome(fa_tmp: pathlib.Path):
 
 def render_template(**args):
     """
-    Renders the template with the given data
+    Renders the template with the given data 
     """
     loader = FileSystemLoader("templates")
     env = Environment(loader=loader, autoescape=True)
     temp = env.get_template("index.html.jinja")
     comp = temp.render(**args)
     return comp
-
 
 def main():
     """
